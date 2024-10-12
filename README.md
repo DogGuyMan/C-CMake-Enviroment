@@ -19,8 +19,11 @@
 > ### 1. 빌드 시스템 구축
 
 #### 1). CMake Debug 환경 구축
+
 https://github.com/microsoft/vscode-cmake-tools/issues/1412
+
 https://www.youtube.com/watch?v=Qng2RW_bjS8&ab_channel=CodingwithMat
+
 ![](image/2024-10-12-20-46-55.png)
 
 만약 아래와 같은 에러가 뜨면서 디버깅이 안될 수 있다.
