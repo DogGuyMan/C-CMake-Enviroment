@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.14.0)
 project(Project)
 
 set(CMAKE_C_STANDARD 17)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -g -O0")
 
 add_subdirectory(./lib/linkedlist)
 

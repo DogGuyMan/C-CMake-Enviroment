@@ -47,7 +47,6 @@ void Append(LinkedList * selfPointer, int data) {
         printf("Linked List Capacity FULL\n");
         abort();
     }
-    int currentSize = selfPointer->size;
     if(selfPointer->startPtr == NULL) { AddNodeFirstTime(selfPointer, data); return;}
 
     Node* newNode = CreateNode(data);
@@ -59,7 +58,6 @@ void Append(LinkedList * selfPointer, int data) {
     selfPointer->headPtr = newNode;
     selfPointer->startPtr = selfPointer->headPtr;
     selfPointer->size++;
-
 }
 void Prepend(LinkedList * selfPointer, int data) {
     if(selfPointer == NULL) {
@@ -70,7 +68,6 @@ void Prepend(LinkedList * selfPointer, int data) {
         printf("Linked List Capacity FULL\n");
         abort();
     }
-    int currentSize = selfPointer->size;
     if(selfPointer->tailPtr == NULL) { AddNodeFirstTime(selfPointer, data); return;}
 
     Node* newNode = CreateNode(data);
